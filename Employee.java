@@ -1,24 +1,19 @@
-package  day;
+package encapsulation;
 
 public class Employee {
+	public String name;
+ private  int id;
+ public String deptname;
+     protected String loc;
 	
-  Employee(String name ,
-	int i,
-	int age,
-	String dept)
-  {
-	  System.out.println("employee details are:");
-  System.out.println("employee name:"+name+"employee salary:"+i+"employee age:"+age+"employee dept:"+dept);
-  
-	 
-  }
-  
-	public static void man(String[] args) {
-		System.out.println("employee  list :");
-		Employee e1 = new Employee("latha",400000,22,"developer");
-		Employee e2 = new Employee("kavya", 300000, 25, "medico");
-		
-		
-	}
+ public void  setEmployeeid(int id)
+ {
+	 this.id=id;
+ }
+ public int getEmployeeid()
+ {
+	 return id;
+ }
+
 
 }
